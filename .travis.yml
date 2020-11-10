@@ -11,8 +11,16 @@ matrix:
   include:
     - rvm: jruby-19mode
       env: JRUBY_OPTS="$JRUBY_OPTS --debug"
+      arch: amd64
     - rvm: jruby-head
       env: JRUBY_OPTS="$JRUBY_OPTS --debug"
+      arch: amd64
+    - rvm: jruby-19mode
+      env: JRUBY_OPTS="$JRUBY_OPTS --debug"
+      arch: ppc64le
+    - rvm: jruby-head
+      env: JRUBY_OPTS="$JRUBY_OPTS --debug"
+      arch: ppc64le
 notifications:
   irc:
     channels:
